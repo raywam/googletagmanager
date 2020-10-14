@@ -7,9 +7,9 @@ function reportClickButton1() {
   window.dataLayer.push({'event': 'click_button_1'});
 }
 
-function reportMouseUpButton1() {
-  console.log('onMouseUp_button_2')
-  window.dataLayer.push({'event': 'onMouseUp_button_2'});
+function reportMouseLeaveButton1() {
+  console.log('onMouseLeave_button_1')
+  window.dataLayer.push({'event': 'onMouseLeave_button_1'});
 }
 
 function App() {
@@ -18,19 +18,18 @@ function App() {
     reportClickButton1();
   }
 
-  function rendleMouseUpButton2(event) {
+  function rendleMouseLeaveButton1(event) {
     event.preventDefault();
-    reportMouseUpButton1();
+    reportMouseLeaveButton1();
   }
-
 
   return (
     <div className="App">
-      <p>v1</p>
+      <p>v2</p>
       <form id="signup-form" onSubmit={rendleClickButton1}>
         <button type="submit">Button 1</button>
       </form>
-      <button onMouseUp={rendleMouseUpButton2}>Button 1</button>
+      <button onMouseLeave={rendleMouseLeaveButton1}>Button 1</button>
     </div>
   );
 }
