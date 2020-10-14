@@ -26,6 +26,7 @@ function App() {
 
   return (
     <div className="App">
+      <p>v1</p>
       <form id="signup-form" onSubmit={rendleClickButton1}>
         <button type="submit">Button 1</button>
       </form>
