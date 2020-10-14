@@ -1,6 +1,6 @@
 import React from 'react';
 
-var dataLayer = [];
+var dataLayer = window.dataLayer || [];
 
 function reportClickButton1() {
   console.log('click_button_1')
