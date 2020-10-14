@@ -1,15 +1,15 @@
 import React from 'react';
 
-window.dataLayer = window.dataLayer || [];
+var dataLayer = dataLayer || [];
 
 function reportClickButton1() {
   console.log('click_button_1')
-  window.dataLayer.push({'event': 'click_button_1'});
+  dataLayer.push({'event': 'click_button_1', 'user': 'admin'});
 }
 
 function reportMouseLeaveButton1() {
   console.log('onMouseLeave_button_1')
-  window.dataLayer.push({'event': 'onMouseLeave_button_1'});
+  dataLayer.push({'event': 'onMouseLeave_button_1', 'user': 'professor'});
 }
 
 function App() {
