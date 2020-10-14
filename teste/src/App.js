@@ -14,13 +14,13 @@ function reportMouseLeaveButton1() {
 
 function App() {
   function rendleClickButton1(event) {
-    event.preventDefault();
-    reportClickButton1();
+    event.preventDefault()
+    reportClickButton1()
   }
 
   function rendleMouseLeaveButton1(event) {
-    event.preventDefault();
-    reportMouseLeaveButton1();
+    event.preventDefault()
+    reportMouseLeaveButton1()
   }
 
   return (
