@@ -3,7 +3,6 @@ import React from 'react';
 var dataLayer = window.dataLayer || [];
 
 function reportClickButton1() {
-  console.log('click_button_1')
   dataLayer.push(
     {
       'eventCategory': 'clicks', 
@@ -13,7 +12,6 @@ function reportClickButton1() {
 }
 
 function reportMouseLeaveButton1() {
-  console.log('onMouseLeave_button_1')
   dataLayer.push(
     {
       'eventCategory': 'clicks', 
