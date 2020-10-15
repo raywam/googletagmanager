@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 
 var dataLayer = window.dataLayer || [];
 
@@ -12,6 +13,16 @@ function reportSubmit() {
     });
 }
 
+function reportMouseLeaveBottomBox() {
+  dataLayer.push(
+    {
+      'event': 'mouseLeaveBottomBox',
+      'eventCategory': 'mouse_leave', 
+      'eventAction': 'mouse_leave_bottom_Box', 
+      'eventValue': 'professor',
+    });
+}
+
 
 function App() {
   function rendleSubmit(event) {
@@ -19,10 +30,13 @@ function App() {
     reportSubmit()
   }
 
-
+  function mouseLeaveBottomBox(event) {
+    event.preventDefault()
+    reportMouseLeaveBottomBox()
+  }
 
   return (
-    <div className="App" style={{minHeight:1800 + 'px'}}>
+    <div className="App">
       <p>v4</p>
       <form id="signup-form" onSubmit={rendleSubmit}>
         <input type="text"></input>
@@ -30,6 +44,8 @@ function App() {
       </form>
       <br/>
       <a target="_blank" rel="noopener noreferrer" href="https://www.google.com">Google</a>
+      <div className="bottombox" onMouseLeave={mouseLeaveBottomBox}>
+      </div>
     </div>
   );
 }
