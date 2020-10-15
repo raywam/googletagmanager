@@ -35,9 +35,9 @@ function App() {
     <div className="App" style={{minHeight:1800 + 'px'}}>
       <p>v4</p>
       <form id="signup-form" onSubmit={rendleClickButton1}>
-        <button type="submit">Button 2</button>
+        <button type="submit" className="button2">Button 2</button>
       </form>
-      <button onMouseLeave={rendleMouseLeaveButton1}>Button 1</button>
+      <button onMouseLeave={rendleMouseLeaveButton1} className="button1">Button 1</button>
       <a target="_blank" rel="noopener noreferrer" href="https://www.google.com">Google</a>
     </div>
   );
