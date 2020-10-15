@@ -38,7 +38,7 @@ function App() {
         <button type="submit">Button 2</button>
       </form>
       <button onMouseLeave={rendleMouseLeaveButton1}>Button 1</button>
-      <a target="_blank" href="www.google.com">Google</a>
+      <a target="_blank" href="https://www.google.com">Google</a>
     </div>
   );
 }
