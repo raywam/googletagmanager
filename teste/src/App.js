@@ -5,6 +5,7 @@ var dataLayer = window.dataLayer || [];
 function reportClickButton1() {
   dataLayer.push(
     {
+      'event': 'submitForm',
       'eventCategory': 'clicks', 
       'eventAction': 'click_button_1', 
       'eventValue': 'admin',
@@ -14,7 +15,8 @@ function reportClickButton1() {
 function reportMouseLeaveButton1() {
   dataLayer.push(
     {
-      'eventCategory': 'clicks', 
+      'event': 'onMouseLeave',
+      'eventCategory': 'onMouseLeave', 
       'eventAction': 'onMouseLeave_button_1', 
       'eventValue': 'professor',
     });
